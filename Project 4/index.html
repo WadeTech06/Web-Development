@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="bootstrap\dist\css\bootstrap.min.css" />
+    <script src="jquery\dist\jquery.js"></script>
+    <script src="bootstrap\dist\js\bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
+            <span class="caret"></span></button>
+            <ul id="dropdown_menu" class="nav dropdown-menu nav-tabs">
+                <li><a data-toggle="tab" href="#name">Name</a></li>
+                <li><a data-toggle="tab" href="#address">Address</a></li>
+                <li><a data-toggle="tab" href="#hours">Business Hours</a></li>
+                <li id="dropdown_submenu" class="dropdown-submenu">
+                    <a class="sub" id="menu" href="#">Menu<span class="caret"></span></a>
+                    <ul id="menu_option" class="dropdown-menu"></ul>
+                </li>
+                <li><a data-toggle="tab" id="attributes" href="#service">Services and Features</a></li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div id="name" class="tab-pane fade jumbotron">
+                <h1 id=NameContent></h1>
+            </div>
+            
+            <div id="address" class="tab-pane fade jumbotron">
+                <h3 id=AddressContent></h3>
+            </div>
+
+            <div id="hours" class="tab-pane fade">
+                <table id="HoursContent" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="breakfast" class="tab-pane fade">
+                <div class="breakfast_content"></div>
+            </div>
+
+            <div id="brunch" class="tab-pane fade">
+                <div class="brunch_content"></div>
+            </div>
+
+            <div id="lunch" class="tab-pane fade">
+                <div class="lunch_content"></div>
+            </div>
+
+            <div id="dinner" class="tab-pane fade">
+                <div class="dinner_content"></div>
+            </div>
+
+            <div id="drinks" class="tab-pane fade">
+                <div class="drinks_content"></div>
+            </div>
+
+            <div id="service" class="tab-pane fade">
+                <h3>Service and Features</h3>
+                <ul id="service_content">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="Parser.js"></script>
+</body>
+<script type="text/javascript">
+    parseJson();
+    parseXML();
+    // SetEvents();
+
+    $(document).ready(function () {
+        $('.dropdown-submenu a.sub').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+        $('#dropdown_menu li').on("click", function (e) {
+            $("#dropdown_menu li").each(function (i, li) {
+                if ($(li).hasClass("active"))
+                    $(li).removeClass("active");
+            });
+            e.target.className = "active";
+        });
+    });
+</script>
+
+</html>

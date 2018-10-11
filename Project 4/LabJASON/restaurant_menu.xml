@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <breakfast>
+    <appetizer><name>Fruit Bowl</name><price>10.90</price></appetizer>
+    <salad><name>Caeser salad</name><price>3.90</price></salad>
+    <soup><name>Chicken Noodle</name><price>5.90</price></soup>
+    <entree><name>Omelet</name><price>20.90</price></entree>
+	<entree><name>Scrambled Eggs</name><price>20.90</price></entree>
+    <dessert><name>Apple Pie</name><price>7.90</price></dessert>
+  </breakfast>
+  <brunch>
+    <appetizer><name>Fruit Bowl</name><price>10.90</price></appetizer>
+	<appetizer><name>EggPlant Frits</name><price>10.90</price></appetizer>
+    <salad><name>House salad</name><price>3.90</price></salad>
+    <soup><name>Chicken Noodle</name><price>5.90</price></soup>
+	<entree><name>French Toast</name><price>20.90</price></entree>
+	<entree><name>Omelet</name><price>20.90</price></entree>
+	<entree><name>Scrambled Eggs</name><price>20.90</price></entree>
+    <entree><name>Hamburg</name><price>20.90</price></entree>
+    <dessert><name>Apple Pie</name><price>7.90</price></dessert>
+  </brunch>
+  <lunch>
+    <appetizer><name>Calamari</name><price>10.90</price></appetizer>
+    <salad><name>Caeser salad</name><price>3.90</price></salad>
+	<salad><name>Arugula salad</name><price>3.90</price></salad>
+    <soup><name>Chicken Noodle</name><price>5.90</price></soup>
+	<soup><name>Italian Wedding soup</name><price>5.90</price></soup>
+    <entree><name>Steak</name><price>20.90</price></entree>
+	<entree><name>Hamburg</name><price>20.90</price></entree>
+	<entree><name>Angel Hair Pasta</name><price>20.90</price></entree>
+    <dessert><name>Tiramisu</name><price>7.90</price></dessert>
+  </lunch>
+  <dinner>
+    <appetizer><name>Calamari</name><price>10.90</price></appetizer>
+	<appetizer><name>EggPlant Frits</name><price>10.90</price></appetizer>
+    <salad>House salad<price>3.90</price></salad>
+	<salad><name>Caeser salad</name><price>3.90</price></salad>
+    <soup>Chicken Noodle<price>5.90</price></soup>
+	<soup><name>Italian Wedding soup</name><price>5.90</price></soup>
+    <soup><name>Roasted Patato</name><price>5.90</price></soup>
+	<entree><name>Steak</name><price>20.90</price></entree>
+	<entree><name>Hamburg</name><price>20.90</price></entree>
+	<entree><name>Angel Hair Pasta</name><price>20.90</price></entree>
+    <entree><name>Roasted Duck</name><price>20.90</price></entree>
+    <dessert><name>Apple Pie</name><price>7.90</price></dessert>
+	<dessert><name>Tiramisu</name><price>7.90</price></dessert>
+	<dessert><name>Creme Brule</name><price>7.90</price></dessert>
+  </dinner>
+  <drinks>
+    <beer><name>Bud Weiser</name><price>5.90</price></beer>
+    <beer><name>Hefe Weissbier</name><price>6.90</price></beer>
+    <wine><name>Cabernet Sauvignon</name><FROM>Napa Valley</FROM><price>15.90</price></wine>
+    <wine><name>Margaux</name><price>50.90</price></wine>
+	<wine><name>Pinot Noir</name><FROM>Napa Valley</FROM><price>12.90</price></wine>
+	<wine><name>Chianti</name><price>10.90</price></wine>
+    <coffee><name>Star Bucks</name><price>3.90</price></coffee>
+	<soda><name>Coca Cola</name><price>3.90</price></soda>
+	<soda><name>Sprite</name><price>3.90</price></soda>
+  </drinks>
+</menu>
