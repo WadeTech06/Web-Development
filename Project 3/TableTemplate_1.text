@@ -1,0 +1,56 @@
+class TableTemplate {
+	static fillIn(id, dict, coulmnName) {
+		var i = document.getElementById(id);
+		i.style.visibility = "visible";
+		var rows = i.rows;
+		var cells = null;
+
+		var a=0, b = 0;
+		if (coulmnName == "Part Number") {
+
+			for (a = 0; a < rows.length; a++) {
+				 cells = rows[a].cells;
+
+				var value = cells[b].innerHTML;
+				var braketopen = value.indexOf("{{");//searching for index after the {{
+				var braketclosed = value.indexOf("}}"); //searching for index after the }}
+				var printout = value.substring(2, braketclosed);
+				var v = dict[printout]; //getting the value from the dictionnary
+				cells[b].innerHTML = v;
+
+			}
+		}
+
+		else if (coulmnName == "Length") {
+			 cells = rows[a].cells;
+			for (b = a; b < cells.length; b++) {
+				var value = cells[b].innerHTML;
+				var braketopen = value.indexOf("{{");//searching for index after the {{
+				var braketclosed = value.indexOf("}}"); //searching for index after the }}
+				var printout = value.substring(2, braketclosed);
+				var v = dict[printout]; //getting the value from the dictionnary
+				cells[b].innerHTML = v;
+
+			}
+
+		}
+		else {
+			for (a = 0; a < rows.length; a++) {
+				 cells = rows[a].cells;
+				for (b = a; b < cells.length; b++) {
+
+					var value2 = cells[b].innerHTML;
+					var braketopen = value2.indexOf("{{");//searching for index after the {{
+					var braketclosed = value2.indexOf("}}"); //searching for index after the }}
+					var printout = value2.substring(2, braketclosed);
+					var v1 = dict[printout]; //getting the value from the dictionnary
+					cells[b].innerHTML = v1;
+				}
+
+			}
+
+
+			//document.getElementById("tester").innerHTML = end;
+		}
+	}
+}

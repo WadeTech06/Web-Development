@@ -1,0 +1,10 @@
+.header {
+  border: 1px solid black;
+  font-weight: bold;
+}
+#LinkHeader {
+    text-align: center;
+}
+.row, .cell {
+    padding: 20px;
+}
