@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="p2.css" />
+  <meta charset="utf-8" />
+  <title>CIS 408 Project 2</title>
+</head>
+<body>
+  <ul class="tab">
+    <li><a class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</a></li>
+    <li><a class="tablinks" onclick="openCity(event, 'News')">News</a></li>
+    <li><a class="tablinks" onclick="openCity(event, 'Courses')">Courses</a></li>
+    <li><a class="tablinks" onclick="openCity(event, 'Class Rank')">Class Rank</a></li>
+    <li><a class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</a></li>
+  </ul>
+
+  <div id="Home" class="tabcontent">
+    <div style="text-align:center">
+      <h3><u>Personal Info</u></h3>
+      <p><b>Name:</b> Lakiel Wade</p>
+      <p><b>CSU ID:</b> 2601283</p>
+      <p><b>Email:</b> Lakielw@hotmail.com</p>
+      <a href="http://grail.eecs.csuohio.edu/~lawade">Website</a>
+
+      <br />
+      <br />
+      <br />
+
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="mySlides fade">
+          <img src="Images/robot1.jpeg" width="300" height="300">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="Images/robot2.png" width="300" height="300">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="Images/robot3.jpg" width="300" height="300">
+        </div>
+      </div>
+      <br />
+    </div>
+  </div>
+
+  <div id="News" class="tabcontent">
+    <section style="margin:20px;">
+      <iframe src="http://www.foxnews.com/"></iframe>
+      <iframe src="http://www.mercurynews.com/"></iframe>
+    </section>
+    <section style="margin:20px;">
+      <iframe src="http://www.cleveland.com/#/0"></iframe>
+      <iframe src="http://www.espn.com/nba/team/_/name/cle/cleveland-cavaliers"></iframe>
+    </section>
+    <div style="text-align:center">
+      <div class="videoBlock">
+        <div class="videoControls">
+          <button id="play" onclick="PlayPause()">Play</button>
+          <button id="pause" onclick="PlayPause()">Pause</button>
+          <button onclick="Restart()">Restart |> </button>
+          <button onclick="Forward()">Forward >></button>
+          <button onclick="Rewind()">Rewind << </button>
+        </div>
+        <br />
+        <video id="video">
+          <source src="Video/Waterproof_test.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <br />
+      <iframe class="iframevideo" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div id="Courses" class="tabcontent">
+    <h3>Class List in Spring 2017</h3>
+    <ul>
+      <li>CIS 340 Systems Programming </li>
+      <li><a href="CIS408/CIS408.html">CIS 408 Internet Programming</a></li>
+      <li>CIS 434 Software Engineering</li>
+      <li>CIS 493 Autonomous Intelligent Robotics</li>
+    </ul>
+  </div>
+
+  <div id="Class Rank" class="tabcontent">
+    <input id="csv" type="file" />
+    <br /><br />
+    CSU ID: <input type="text" name="ID" id="sID">
+    <br /><br />
+    <button onclick="csvJSON()">Rank</button>
+
+    <br />
+    <br />
+
+    <div class="rankresults">
+      <p id="sTotal">Total Score:</p>
+      <p id="sRank">Rank:</p>
+    </div>
+  </div>
+
+  <div id="Contacts" class="tabcontent">
+    <div class="contact">
+      <h3><u>Contact</u></h3>
+      <p>Name: Lakiel Wade</p>
+      <p>Email: lakielw@hotmail.com</p>
+      <p style="border-bottom: 1px solid black">Cell: 216-347-0432</p>
+
+      <h3><u>Washkewicz College of Engineering</u></h3>
+      <p>Computer Science Department</p>
+      <p>2121 Euclid Avenue, FH 332</p>
+      <p>Cleveland, OH, 44114</p>
+      <p>Phone: 216-687-2589</p>
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="jquery-3.1.1.slim.js"></script>
+<script src="jquery.csv.js"></script>
+<script src="JavaScript.js"></script>

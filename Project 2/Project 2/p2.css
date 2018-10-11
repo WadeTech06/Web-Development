@@ -1,0 +1,163 @@
+﻿/* Style the list */
+body {
+  background-color: #10cb20;
+}
+
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid :#1d5f02;
+  border-bottom: 1px solid #ccc;
+  border-color: #1d5f02;
+  background-color: #1d5f02;
+}
+
+  /* Float the list items side by side */
+  ul.tab li {
+    float: left;
+    margin: 2px;
+    border: 1px solid #ccc;
+  }
+
+    /* Style the links inside the list items */
+    ul.tab li a {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+      /* Change background color of links on hover */
+      ul.tab li a:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      ul.tab li a:focus, .active {
+        background-color: #ccc;
+        font-weight: bold;
+      }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  margin-top: -22px;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+iframe {
+  width: 600px;
+  height: 600px;
+}
+
+
+/* Video CSS*/
+video {
+  height: 300px;
+}
+
+.videoControls {
+  display: none;
+}
+
+.videoBlock:hover .videoControls {
+  display: block;
+}
+
+/*class rank tab*/
+.rankresults {
+  border:2px solid black;
+  position: fixed;
+}
+
+
+/*csu contact*/
+.contact {
+  text-align:center;
+
+}
